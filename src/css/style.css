@@ -1,7 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
 body {
+    background-image: url("/src/assets/images/vector-old-paper-1627.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
     min-height: 100vh;
-    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #2980b9;
+    font-weight: bold;
+    color: white;
+    padding: 5px 15px;
+    border: 0px;
+    border-radius: 5px;
+    cursor:pointer;
+    margin: 0, 3px;
+}
+
+input {
+    padding: 8px, 14px;
+    outline: 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+form input {
+    flex: 1;
+    margin-right: 15px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+li p {
+    flex: 1;
+}
+
+li .todo {
+    flex: 0 0 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-right: 15px;
+    border: 2px solid #333;
+}
+
+li .todo.done {
+    background: #333;
 }

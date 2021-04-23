@@ -1,0 +1,50 @@
+body {
+    background-image: url("/src/assets/images/paper-seamless-background-1380.jpg");
+}
+
+div.container h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    color: orangered;
+    font-size: 32px;
+}
+
+div.todos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: column;
+}
+
+div.todos div.todo {
+    display: inline-flex;
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    background-color: yellow;
+    align-items: center;
+}
+
+div.todos div.todo div.todo-images img {
+    width: 20px;
+    height: 20px;
+}
+
+div.todos p {
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+form.newTodo {
+    text-align: center;
+}
+
+form.newTodo legend {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
