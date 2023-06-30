@@ -21,6 +21,6 @@ jobs:
           password: ${{ secrets.HOSTINGER_PASSWORD }}
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
-            cd /public_html/todoo
+            cd /home/u195786077/domains/ymaury-developments.com/public_html/todoo
             rm -rf *
-            cp -R src/* .
+            cp -R $GITHUB_WORKSPACE/src/* .
